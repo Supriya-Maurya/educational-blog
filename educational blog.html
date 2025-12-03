@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>KnowledgeHub - Educational Portal</title>
+
+<style>
+    body { 
+        font-family: Arial, sans-serif; 
+        margin: 0; 
+        background: #f0f7ff;
+    }
+
+header h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 28px;
+    margin: 0;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: flex-start;
+}
+
+.logo {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 2px solid white;
+    object-fit: cover;
+}
+
+    nav {
+        background: #ffffff;
+        padding: 12px;
+        display: flex;
+        justify-content: center;
+        gap: 25px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    nav a {
+        text-decoration: none;
+        font-weight: bold;
+        color: #2c5aa0;
+        font-size: 16px;
+    }
+
+    .container {
+        width: 90%;
+        margin: auto;
+        margin-top: 25px;
+    }
+
+    h2 { 
+        color: #2c5aa0; 
+        margin-bottom: 10px;
+    }
+
+    /* Categories and Tags */
+    .categories, .tags {
+        background: white;
+        padding: 15px;
+        border-radius: 8px;
+        margin-bottom: 20px;
+    }
+
+    .cat-btn, .tag-btn {
+        display: inline-block;
+        padding: 7px 16px;
+        background: #4a90e2;
+        color: white;
+        border-radius: 15px;
+        margin: 6px;
+        font-size: 14px;
+        text-decoration: none;
+    }
+    .tag-btn { background: #50c878; }
+
+    /* Featured Post */
+    .featured {
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        border-left: 6px solid #ff9800;
+    }
+
+    .featured h3 {
+        color: #e68900;
+        margin-bottom: 5px;
+    }
+
+    /* Blog Posts */
+    .blog-post {
+        background: white;
+        padding: 15px;
+        border-radius: 8px;
+        margin-bottom: 20px;
+        border-left: 6px solid #2c5aa0;
+    }
+    .blog-post h3 { color: #2c5aa0; }
+    .blog-post p { color: #444; font-size: 15px; }
+
+    /* Author Box */
+    .author-box {
+        background: #e3f2fd;
+        padding: 12px;
+        margin-top: 10px;
+        border-radius: 5px;
+        color: #2c5aa0;
+        font-size: 14px;
+    }
+
+    /* Newsletter */
+    .newsletter {
+        background: #ffffff;
+        padding: 20px;
+        border-radius: 10px;
+        margin: 25px 0;
+        text-align: center;
+    }
+    .newsletter input {
+        width: 80%;
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid #bbb;
+    }
+    .newsletter button {
+        padding: 10px 15px;
+        background: #2c5aa0;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        margin-top: 10px;
+        cursor: pointer;
+    }
+
+    /* Comment Section */
+    .comment-box {
+        background: white;
+        padding: 15px;
+        border-radius: 8px;
+    }
+    .comment-box input, .comment-box textarea {
+        width: 100%;
+        padding: 8px;
+        margin: 6px 0;
+        border-radius: 5px;
+        border: 1px solid #bbb;
+    }
+
+    button {
+        padding: 10px 15px;
+        background: #2c5aa0;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    footer {
+        margin-top: 30px;
+        background: #2c3e50;
+        color: white;
+        text-align: center;
+        padding: 15px;
+    }
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="header-container">
+        <img src="https://picsum.photos/seed/education/70/70.jpg" class="logo">
+        <div>
+            <h1>KnowledgeHub</h1>
+            <p>Science • Mathematics • History • Literature – Expand Your Horizons</p>
+        </div>
+    </div>
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#">Science</a>
+    <a href="#">Mathematics</a>
+    <a href="#">History</a>
+    <a href="#">Literature</a>
+    <a href="#">Languages</a>
+    <a href="#">Resources</a>
+    <a href="#">Study Tips</a>
+</nav>
+
+<div class="container">
+
+    <!-- Categories -->
+    <h2>Categories</h2>
+    <div class="categories">
+        <a class="cat-btn">Physics</a>
+        <a class="cat-btn">Chemistry</a>
+        <a class="cat-btn">Biology</a>
+        <a class="cat-btn">Mathematics</a>
+        <a class="cat-btn">History</a>
+        <a class="cat-btn">Geography</a>
+        <a class="cat-btn">Literature</a>
+        <a class="cat-btn">Languages</a>
+        <a class="cat-btn">Philosophy</a>
+        <a class="cat-btn">Psychology</a>
+        <a class="cat-btn">Study Methods</a>
+    </div>
+
+    <!-- Tags -->
+    <h2>Popular Tags</h2>
+    <div class="tags">
+        <a class="tag-btn">Quantum Physics</a>
+        <a class="tag-btn">Calculus</a>
+        <a class="tag-btn">World History</a>
+        <a class="tag-btn">Shakespeare</a>
+        <a class="tag-btn">Chemical Reactions</a>
+        <a class="tag-btn">Algebra</a>
+        <a class="tag-btn">Ancient Civilizations</a>
+        <a class="tag-btn">Modern Literature</a>
+        <a class="tag-btn">Language Learning</a>
+        <a class="tag-btn">Memory Techniques</a>
+        <a class="tag-btn">Research Methods</a>
+        <a class="tag-btn">Exam Preparation</a>
+    </div>
+
+    <!-- Featured Article -->
+    <h2>Featured Article</h2>
+    <div class="featured">
+        <h3>The Future of Education: Blended Learning Approaches</h3>
+        <p>The educational landscape is rapidly evolving with technology integration and innovative teaching methodologies. Blended learning, which combines traditional classroom instruction with digital resources, is becoming the new standard. This approach offers personalized learning paths, immediate feedback through adaptive technologies, and access to global educational resources. Students benefit from both face-to-face interaction with teachers and the flexibility of online learning platforms. As artificial intelligence continues to advance, we can expect more customized educational experiences tailored to individual learning styles and paces. The future classroom will likely feature virtual reality field trips, AI-powered tutoring systems, and collaborative projects with students from around the world, creating a truly global educational experience.</p>
+        <div class="author-box">✍ Written by: Dr. Priya Sharma | Educational Researcher</div>
+    </div>
+
+    <!-- Blog Posts -->
+    <h2>Latest Articles</h2>
+
+    <div class="blog-post">
+        <h3>Understanding Quantum Mechanics: A Beginner's Guide</h3>
+        <p>Quantum mechanics explores the behavior of matter and energy at the molecular, atomic, nuclear, and even smaller microscopic levels. This revolutionary field challenges our classical understanding of physics with concepts like wave-particle duality, quantum superposition, and entanglement. While the mathematics can be complex, the fundamental principles can be grasped through visualizations and thought experiments. Understanding quantum mechanics is increasingly important as it forms the basis for many modern technologies including computers, lasers, and medical imaging devices.</p>
+        <div class="author-box">✍ Author: Dr. Michael Chen</div>
+    </div>
+
+    <div class="blog-post">
+        <h3>Effective Study Techniques for Long-Term Retention</h3>
+        <p>Research in cognitive psychology has identified several evidence-based study techniques that significantly improve long-term retention. Spaced repetition, active recall, and interleaved practice have been shown to be more effective than traditional study methods like cramming and rereading. Creating concept maps, teaching concepts to others, and using the Feynman technique (explaining concepts in simple terms) can deepen understanding. Additionally, maintaining adequate sleep, regular exercise, and proper nutrition can enhance cognitive function and memory consolidation, making study sessions more productive.</p>
+        <div class="author-box">✍ Author: Professor Emily Rodriguez</div>
+    </div>
+
+    <div class="blog-post">
+        <h3>The Renaissance: A Cultural Revolution</h3>
+        <p>The Renaissance, spanning from the 14th to the 17th century, marked a period of cultural rebirth and intellectual transformation in Europe. This era saw unprecedented achievements in art, science, literature, and philosophy. Artists like Leonardo da Vinci and Michelangelo created masterpieces that still captivate us today, while thinkers like Galileo Galilei revolutionized our understanding of the natural world. The invention of the printing press democratized knowledge, leading to increased literacy and the spread of ideas that would eventually challenge established authorities and pave the way for modern scientific thinking.</p>
+        <div class="author-box">✍ Author: Dr. Robert Thompson</div>
+    </div>
+
+    <div class="blog-post">
+        <h3>Environmental Science: Understanding Climate Change</h3>
+        <p>Climate change represents one of the most significant challenges facing our planet. The scientific consensus indicates that human activities, particularly the emission of greenhouse gases, are the primary driver of recent global warming. Understanding the complex interactions between atmospheric conditions, ocean currents, and ecosystems is crucial for developing effective mitigation strategies. Environmental science combines knowledge from chemistry, biology, physics, and earth sciences to analyze these systems and predict future changes. By studying past climate patterns and current trends, scientists are working to develop solutions that balance human development with environmental sustainability.</p>
+        <div class="author-box">✍ Author: Dr. Sarah Williams</div>
+    </div>
+
+    <!-- Newsletter -->
+    <h2>Subscribe to Our Newsletter</h2>
+    <div class="newsletter">
+        <p>Get weekly educational resources, study tips, and exclusive content in your inbox.</p>
+        <input type="email" placeholder="Enter your email">
+        <button>Subscribe</button>
+    </div>
+
+    <!-- Comments -->
+    <h2>Leave a Comment</h2>
+    <div class="comment-box">
+        <input type="text" placeholder="Your Name">
+        <textarea rows="4" placeholder="Write your comment..."></textarea>
+        <button>Submit</button>
+    </div>
+
+</div>
+
+<footer>
+    © 2025 KnowledgeHub | Empowering Learners Worldwide
+</footer>
+
+</body>
+</html>
